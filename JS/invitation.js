@@ -1,4 +1,4 @@
-const targetDate = new Date(2026, 5, 30, 19, 0, 0); // ganti sesuai keinginan
+const targetDate = new Date(2026, 5, 28, 7, 0, 0);
 
 function updateCountdown(){
   const now = new Date();
@@ -82,12 +82,8 @@ audioLagu.onended = function() {
 tombolMusik.onclick = toggleMusic;
 
 // ===== SOLUSI AUTO PLAY SETELAH REFRESH =====
-// Jika datang dari envelope (sudah ada interaksi), play langsung
-// Jika refresh, tunggu user klik di mana saja
-
 let sudahDiputar = false;
 
-// Coba auto play (kalau dari envelope, berhasil)
 setTimeout(function() {
   if (!sudahDiputar) {
     audioLagu.play().then(() => {
@@ -101,7 +97,6 @@ setTimeout(function() {
   }
 }, 500);
 
-// FALLBACK: kalau auto play gagal (karena refresh), tunggu user klik di MANA SAJA
 document.body.addEventListener('click', function sekali() {
   if (!sudahDiputar) {
     audioLagu.play().then(() => {
