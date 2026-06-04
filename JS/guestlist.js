@@ -15,12 +15,9 @@ for(let i=0;i<15;i++){
 
 // DAFTAR NAMA TAMU (EDIT DI SINI)
 const semuaNamaTamu = [
-  "Ahmad", "Budi Santoso", "Citra Dewi", "Dian Permata", "Eka Putra",
-  "Fitri Ayu", "Gilang Ramadan", "Haniya", "Indra Wijaya", "Jihan Fadhila",
-  "Kartika Sari", "Luki Hermawan", "Mega Lestari", "Nanda Alamsyah", "Oktavia",
-  "Putri Amelia", "Rizki Fadillah", "Siti Nurhaliza", "Teguh Prasetyo", "Utami Dewi",
-  "Vera Anggraini", "Wawan Setiawan", "Xena", "Yusuf Maulana", "Zahra Aulia",
-  "Andi Saputra", "Bella Octavia", "Cahya Nugraha", "Dina Febrianti", "Edo Pratama"
+  "imaa",
+  "pitaa",
+  "oda"
 ];
 
 const emojiList = ['🌸', '🎀', '💖', '⭐', '🌹', '💗', '✨', '🍰', '🎂'];
