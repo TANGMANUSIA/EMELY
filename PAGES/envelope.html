@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Undangan Ulang Tahun</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../CSS/envelope.css">
+</head>
+<body>
+
+<div class="ribbon-top"></div>
+<div class="transition-overlay" id="overlay"></div>
+
+<div class="scene">
+  <div class="cake-container" id="cakeWrap">
+    <div class="sparkle" style="top:10px;left:40px;--tx:-18px;--ty:-30px;animation-delay:0s"></div>
+    <div class="sparkle" style="top:5px;left:90px;--tx:10px;--ty:-35px;animation-delay:0.4s;background:#ff8fab"></div>
+    <div class="sparkle" style="top:10px;left:130px;--tx:20px;--ty:-28px;animation-delay:0.8s"></div>
+    <div class="sparkle" style="top:8px;left:60px;--tx:-8px;--ty:-40px;animation-delay:1.1s;background:#e91e63"></div>
+    <div class="sparkle" style="top:6px;left:105px;--tx:16px;--ty:-32px;animation-delay:1.5s"></div>
+
+    <svg class="cake-svg" width="170" height="130" viewBox="0 0 170 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="20" y="74" width="130" height="46" rx="10" fill="#ffb3cc"/>
+      <rect x="20" y="74" width="130" height="46" rx="10" fill="url(#tier2grad)"/>
+      <path d="M30 74 Q38 62 46 74 Q54 62 62 74 Q70 62 78 74 Q86 62 94 74 Q102 62 110 74 Q118 62 126 74 Q134 62 142 74" stroke="white" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <circle cx="45" cy="92" r="4" fill="white" opacity="0.6"/>
+      <circle cx="72" cy="97" r="3" fill="white" opacity="0.5"/>
+      <circle cx="98" cy="90" r="4" fill="white" opacity="0.6"/>
+      <circle cx="125" cy="95" r="3" fill="white" opacity="0.5"/>
+      <rect x="42" y="40" width="86" height="40" rx="8" fill="#ff8fab"/>
+      <rect x="42" y="40" width="86" height="40" rx="8" fill="url(#tier1grad)"/>
+      <path d="M50 40 Q57 30 64 40 Q71 30 78 40 Q85 30 92 40 Q99 30 106 40 Q113 30 120 40" stroke="white" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <text x="58" y="63" font-size="11" text-anchor="middle" fill="white" opacity="0.7">✦</text>
+      <text x="85" y="58" font-size="9" text-anchor="middle" fill="white" opacity="0.7">✦</text>
+      <text x="112" y="63" font-size="11" text-anchor="middle" fill="white" opacity="0.7">✦</text>
+      <rect x="64" y="22" width="9" height="22" rx="4" fill="#ffd6e7"/>
+      <ellipse cx="68.5" cy="21" rx="4.5" ry="5" class="flame" fill="url(#flameGrad1)"/>
+      <circle cx="68.5" cy="24" r="2" fill="#fff3"/>
+      <rect x="80.5" y="16" width="9" height="28" rx="4" fill="#ffb3cc"/>
+      <ellipse cx="85" cy="15" rx="4.5" ry="5.5" class="flame" fill="url(#flameGrad2)"/>
+      <circle cx="85" cy="18" r="2" fill="#fff3"/>
+      <rect x="97" y="22" width="9" height="22" rx="4" fill="#ffd6e7"/>
+      <ellipse cx="101.5" cy="21" rx="4.5" ry="5" class="flame" fill="url(#flameGrad3)"/>
+      <circle cx="101.5" cy="24" r="2" fill="#fff3"/>
+      <ellipse cx="85" cy="120" rx="75" ry="8" fill="#ffb3cc" opacity="0.4"/>
+      <defs>
+        <linearGradient id="tier2grad" x1="20" y1="74" x2="150" y2="120" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#ff8fab" stop-opacity="0.4"/>
+          <stop offset="100%" stop-color="#e91e63" stop-opacity="0.15"/>
+        </linearGradient>
+        <linearGradient id="tier1grad" x1="42" y1="40" x2="128" y2="80" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#ffd6e7" stop-opacity="0.5"/>
+          <stop offset="100%" stop-color="#e91e63" stop-opacity="0.1"/>
+        </linearGradient>
+        <radialGradient id="flameGrad1" cx="50%" cy="60%">
+          <stop offset="0%" stop-color="#fff176"/>
+          <stop offset="40%" stop-color="#ffb300"/>
+          <stop offset="100%" stop-color="#ff6d00" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="flameGrad2" cx="50%" cy="60%">
+          <stop offset="0%" stop-color="#fff9c4"/>
+          <stop offset="40%" stop-color="#ffca28"/>
+          <stop offset="100%" stop-color="#ff8f00" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="flameGrad3" cx="50%" cy="60%">
+          <stop offset="0%" stop-color="#fff176"/>
+          <stop offset="40%" stop-color="#ffb300"/>
+          <stop offset="100%" stop-color="#ff6d00" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+    </svg>
+  </div>
+
+  <div class="envelope-wrap" id="envelope">
+    <div class="envelope-body"></div>
+    <div class="envelope-flap" id="flap"></div>
+    <div class="seal" id="seal">🎀</div>
+    <div class="letter" id="letter">
+      <p>Kamu mendapat undangan spesial!</p>
+      <div class="name-preview">✦ Happy Birthday ✦</div>
+    </div>
+  </div>
+
+  <div class="cta-wrap">
+    <p class="hint-text">— klik amplop untuk membuka —</p>
+    <button class="open-btn" id="enterBtn" style="display:none">Buka Undangan ✉</button>
+  </div>
+</div>
+
+<script src="../JS/envelope.js"></script>
+</body>
+</html>

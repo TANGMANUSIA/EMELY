@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Undangan Ulang Tahun</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../CSS/invitation.css">
+</head>
+<body>
+
+<div class="blob" style="width:400px;height:400px;background:#ffb3cc;top:-100px;left:-120px;animation-duration:12s;"></div>
+<div class="blob" style="width:300px;height:300px;background:#ffd6e7;top:30%;right:-80px;animation-duration:9s;animation-delay:3s;"></div>
+<div class="blob" style="width:350px;height:350px;background:#ffe4ef;bottom:10%;left:10%;animation-duration:14s;animation-delay:1.5s;"></div>
+
+<div class="music-btn" id="musicBtn">🎵</div>
+
+<audio id="happyBirthday" loop>
+<source src="../ASSETS/MUSIC/mantap.mpeg">
+</audio>
+
+<div class="page">
+  <div class="header-card" style="background-image: url('../ASSETS/IMAGES/emely.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+  <p class="header-eyebrow">✦ You're Invited ✦</p>
+  <p class="header-pre">Selamat datang di perayaan ulang tahun</p>
+  
+  <!-- QUOTE DIHAPUS, DIGANTI KOSONG -->
+  
+  <div class="header-divider">
+    <span></span><em>🎂</em><span></span>
+  </div>
+  <p class="header-age">yang ke-<em style="font-style:normal">__</em> tahun</p>
+  
+  <!-- NAMA DIPINDAH KE BAWAH -->
+  <h1 class="header-name" style="margin-top: 90px; margin-bottom: 20px;">Yunita Permatasari</h1>
+</div>
+
+  <div class="glass-card" style="animation-delay:0.1s">
+    <div class="section-title">Info Acara</div>
+    <div class="info-grid">
+      <div class="info-item">
+        <span class="icon">📅</span>
+        <div class="label">Tanggal</div>
+        <div class="value">Sabtu, DD MMMM YYYY</div>
+        <div class="sub">Catat di kalendermu!</div>
+      </div>
+      <div class="info-item">
+        <span class="icon">⏰</span>
+        <div class="label">Waktu</div>
+        <div class="value">00.00 WIB</div>
+        <div class="sub">Jangan sampai telat ya</div>
+      </div>
+      <div class="info-item">
+        <span class="icon">📍</span>
+        <div class="label">Tempat</div>
+        <div class="value">Nama Tempat</div>
+        <div class="sub">Alamat lengkap di sini</div>
+      </div>
+      <div class="info-item">
+        <span class="icon">🎉</span>
+        <div class="label">Tema</div>
+        <div class="value">Nama Tema</div>
+        <div class="sub">Lihat dress code ya!</div>
+      </div>
+    </div>
+    <a href="#" class="location-btn" target="_blank">
+      📌 &nbsp; Lihat Lokasi di Maps
+    </a>
+  </div>
+
+  <!-- DAFTAR TAMU (teks host di ATAS tombol) -->
+  <div class="glass-card" style="animation-delay:0.15s; text-align: center;">
+    <div class="section-title">📋 Daftar Tamu Undangan</div>
+    
+    <!-- Teks host di atas tombol -->
+    <div style="margin: 15px 0 10px 0;">
+      <p class="footer-from" style="font-size: 14px; margin-bottom: 5px;">Dengan penuh cinta, dari</p>
+      <p class="footer-name" style="font-size: 22px;">Yunita Permata Sari</p>
+      <p class="footer-hearts" style="font-size: 16px;">♥ ♥ ♥</p>
+    </div>
+    
+    <!-- Tombol di bawah teks host -->
+    <a href="guestlist.html" class="guest-link-btn" style="display: inline-block; margin-top: 10px;">
+      📋 &nbsp; Lihat Daftar Tamu
+    </a>
+  </div>
+
+  <div class="glass-card" style="animation-delay:0.2s">
+    <div class="section-title">Hitung Mundur</div>
+    <div class="countdown-wrap" id="countdown">
+      <div class="cd-box"><div class="cd-num" id="cd-d">--</div><div class="cd-label">Hari</div></div>
+      <div class="cd-box"><div class="cd-num" id="cd-h">--</div><div class="cd-label">Jam</div></div>
+      <div class="cd-box"><div class="cd-num" id="cd-m">--</div><div class="cd-label">Menit</div></div>
+      <div class="cd-box"><div class="cd-num" id="cd-s">--</div><div class="cd-label">Detik</div></div>
+    </div>
+  </div>
+
+  <div class="glass-card" style="animation-delay:0.3s">
+    <div class="section-title">Dress Code</div>
+    <div class="dress-row">
+      <div class="dress-chip"><div class="color-dot" style="background:#f8bbd0"></div> Soft Pink</div>
+      <div class="dress-chip"><div class="color-dot" style="background:#ffffff;border-color:#f8bbd0"></div> White</div>
+      <div class="dress-chip"><div class="color-dot" style="background:#fce4ec"></div> Blush</div>
+      <div class="dress-chip"><div class="color-dot" style="background:#e91e63"></div> Hot Pink</div>
+    </div>
+    <div class="note-card" style="margin-top:16px">
+      💌 Tolong hadir dengan warna-warna di atas ya! Buat foto bareng lebih aesthetic~
+    </div>
+  </div>
+
+  <div class="glass-card" style="animation-delay:0.4s">
+    <div class="section-title">Pesan dari Host</div>
+    <div class="note-card">
+      Hei kamu! Aku sangat senang bisa merayakan momen spesial ini bersamamu. Kehadiranmu adalah hadiah terbaik yang bisa aku dapatkan. Sampai jumpa di sana ya! 🎀
+    </div>
+  </div>
+</div>
+
+<script src="../JS/invitation.js"></script>
+</body>
+</html>

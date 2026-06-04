@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Daftar Tamu Undangan</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../CSS/guestlist.css">
+</head>
+<body>
+
+<div class="ribbon-top"></div>
+
+<div class="container">
+  <div class="header-card">
+    <h1>📋 Daftar Tamu</h1>
+    <p>Yang istimewa dan diundang ✨</p>
+  </div>
+
+  <div class="list-card">
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="🔍 Cari nama kamu...">
+      <button id="searchBtn">Cari</button>
+      <button id="resetBtn" style="background:#c2185b;">Reset</button>
+    </div>
+
+    <div class="list-header">
+      <span class="total-badge" id="totalCount">Total: 0 tamu</span>
+      <span style="font-size: 14px;">🎀 💖 🌸</span>
+    </div>
+
+    <ul class="guest-list" id="guestList"></ul>
+
+    <div class="pagination" id="pagination">
+      <button id="prevBtn">⬅ Sebelumnya</button>
+      <span class="page-info" id="pageInfo">Halaman 1 / 1</span>
+      <button id="nextBtn">Selanjutnya ➡</button>
+    </div>
+  </div>
+
+  <a href="invitation.html" class="back-btn">🎀 Kembali ke Undangan 🎀</a>
+</div>
+
+<div class="music-btn" id="musicBtn">🎵</div>
+<audio id="bgMusic" loop>
+<source src="../ASSETS/MUSIC/selamat.mpeg">
+</audio>
+
+<script src="../JS/guestlist.js"></script>
+</body>
+</html>
