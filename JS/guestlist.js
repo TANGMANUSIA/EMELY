@@ -15,9 +15,24 @@ for(let i=0;i<15;i++){
 
 // DAFTAR NAMA TAMU (EDIT DI SINI)
 const semuaNamaTamu = [
-  "imaa",
-  "pitaa",
-  "oda"
+  "pak her",
+  "dewi",
+  "mawar",
+  "ratu",
+  "kak ica",
+  "alifah",
+  "maula",
+  "amin",
+  "novi",
+  "alfi",
+  "fatur",
+  "septian",
+  "valdo",
+  "rayhan",
+  "rasya",
+  "adrian",
+  "angga",
+  "fazar"
 ];
 
 const emojiList = ['🌸', '🎀', '💖', '⭐', '🌹', '💗', '✨', '🍰', '🎂'];
